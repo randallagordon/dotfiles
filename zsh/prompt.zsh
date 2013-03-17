@@ -75,14 +75,12 @@ todo(){
   fi
 }
 
-directory_name(){
-  #echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
+directory_name() {
   echo "%{$fg_bold[cyan]%}${PWD/#$HOME/~}%{$reset_color%}"
 }
 
-VIMODE=">"
-#export PROMPT=$'\n$(rb_prompt) in $(directory_name) $(git_dirty)$(need_push)\n${VIMODE}> '
-export PROMPT=$'\n$(directory_name) $(git_dirty)$(need_push)${VIMODE}> '
+#export PROMPT=$'\n$(rb_prompt) in $(directory_name) $(git_dirty)$(need_push)\n$(vi_mode) '
+export PROMPT=$'\n$(directory_name) $(git_dirty)$(need_push)$(vi_mode) '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}$(todo)%{$reset_color%}"
 }
@@ -93,9 +91,23 @@ precmd() {
 }
 
 # vi mode
-function zle-line-init zle-keymap-select {
-    VIMODE="${${KEYMAP/vicmd/!}/(main|viins)/>}"
+vi_mode() {
+  echo "${VIMODE}"
+}
+
+if [[ "$VIMODE_COMMAND" == "" ]]; then
+  VIMODE_COMMAND="%{$fg_bold[red]%}>>%{$reset_color%}"
+fi
+
+if [[ "$VIMODE_INSERT" == "" ]]; then
+  VIMODE_INSERT="%{$fg_bold[green]%}>>%{$reset_color%}"
+fi
+
+function zle-line-init zle-line-finish zle-keymap-select {
+    VIMODE="${${KEYMAP/vicmd/$VIMODE_COMMAND}/(main|viins)/$VIMODE_INSERT}"
     zle reset-prompt
+    zle -R
 }
 zle -N zle-line-init
+zle -N zle-line-finish
 zle -N zle-keymap-select
