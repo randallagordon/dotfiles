@@ -76,10 +76,13 @@ todo(){
 }
 
 directory_name(){
-  echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
+  #echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
+  echo "%{$fg_bold[cyan]%}${PWD/#$HOME/~}%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(rb_prompt) in $(directory_name) $(git_dirty)$(need_push)\n› '
+VIMODE=">"
+#export PROMPT=$'\n$(rb_prompt) in $(directory_name) $(git_dirty)$(need_push)\n${VIMODE}> '
+export PROMPT=$'\n$(directory_name) $(git_dirty)$(need_push)${VIMODE}> '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}$(todo)%{$reset_color%}"
 }
@@ -88,3 +91,11 @@ precmd() {
   title "zsh" "%m" "%55<...<%~"
   set_prompt
 }
+
+# vi mode
+function zle-line-init zle-keymap-select {
+    VIMODE="${${KEYMAP/vicmd/!}/(main|viins)/>}"
+    zle reset-prompt
+}
+zle -N zle-line-init
+zle -N zle-keymap-select
