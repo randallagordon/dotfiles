@@ -47,3 +47,4 @@ zle -N newtab
 # bindkey '^[^N' newtab
 # bindkey '^?' backward-delete-char
 bindkey -v
+bindkey -M viins 'jj' vi-cmd-mode
