@@ -111,3 +111,13 @@ function zle-line-init zle-line-finish zle-keymap-select {
 zle -N zle-line-init
 zle -N zle-line-finish
 zle -N zle-keymap-select
+
+bindkey -a u undo
+bindkey -a '^R' redo
+bindkey -a 'gg' beginning-of-buffer-or-history
+bindkey -a 'g~' vi-oper-swap-case
+bindkey -a G end-of-buffer-or-history
+
+zle -A .backward-kill-word vi-backward-kill-word
+zle -A .backward-delete-char vi-backward-delete-char
+
