@@ -79,8 +79,16 @@ directory_name() {
   echo "%{$fg_bold[cyan]%}${PWD/#$HOME/~}%{$reset_color%}"
 }
 
+username() {
+  echo "%{$fg_bold[grey]%}%n%{$reset_color%}"
+}
+
+host() {
+  echo "%{$fg_bold[grey]%}@%m%{$reset_color%}"
+}
+
 #export PROMPT=$'\n$(rb_prompt) in $(directory_name) $(git_dirty)$(need_push)\n$(vi_mode) '
-export PROMPT=$'\n$(directory_name) $(git_dirty)$(need_push)$(vi_mode) '
+export PROMPT=$'\n$(username)$(host):$(directory_name) $(git_dirty)$(need_push)$(vi_mode) '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}$(todo)%{$reset_color%}"
 }
