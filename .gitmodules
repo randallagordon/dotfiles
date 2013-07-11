@@ -1,0 +1,3 @@
+[submodule "submodules/powerline-zsh"]
+	path = submodules/powerline-zsh
+	url = https://github.com/randallagordon/powerline-zsh.git

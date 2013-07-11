@@ -56,3 +56,5 @@ function zshexit {
 zle -N zshexit
 
 bindkey 'ZZ' zshexit
+
+# TODO: Make setup match Vim more closely, especially work on making del/backspace and home/end work properly

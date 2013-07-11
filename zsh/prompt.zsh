@@ -104,17 +104,18 @@ vi_mode() {
 }
 
 if [[ "$VIMODE_COMMAND" == "" ]]; then
-  VIMODE_COMMAND="%{$fg_bold[red]%}>>%{$reset_color%}"
+  VIMODE_COMMAND="command"
 fi
 
 if [[ "$VIMODE_INSERT" == "" ]]; then
-  VIMODE_INSERT="%{$fg_bold[green]%}>>%{$reset_color%}"
+  VIMODE_INSERT="insert"
 fi
 
 function zle-line-init zle-line-finish zle-keymap-select {
-    VIMODE="${${KEYMAP/vicmd/$VIMODE_COMMAND}/(main|viins)/$VIMODE_INSERT}"
-    zle reset-prompt
-    zle -R
+  export VIMODE="${${KEYMAP/vicmd/$VIMODE_COMMAND}/(main|viins)/$VIMODE_INSERT}"
+  _update_ps1
+  zle reset-prompt
+  zle -R
 }
 zle -N zle-line-init
 zle -N zle-line-finish
@@ -128,4 +129,14 @@ bindkey -a G end-of-buffer-or-history
 
 zle -A .backward-kill-word vi-backward-kill-word
 zle -A .backward-delete-char vi-backward-delete-char
+
+
+n _update_ps1()
+{
+  export PROMPT="$(~/.dotfiles/submodules/powerline-zsh/powerline-zsh.py $?)"
+}
+precmd()
+{
+  _update_ps1
+}
 
