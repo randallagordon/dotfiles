@@ -8,18 +8,31 @@ set -g default-terminal "screen-256color"
  
 set -g default-command /bin/zsh 
 set -g default-shell /bin/zsh
- 
-# I'm a Vim user, this makes navigation easier
-#setw -g mode-keys vi
-#unbind-key j
-#bind-key j select-pane -D
-#unbind-key k
-#bind-key k select-pane -U
-#unbind-key h
-#bind-key h select-pane -L
-#unbind-key l
-#bind-key l select-pane -R
- 
+
+setw -g mode-keys vi
+
+# split windows like vim
+# vim's definition of a horizontal/vertical split is reversed from tmux's
+bind s split-window -v
+bind v split-window -h
+
+# move around panes with hjkl, as one would in vim after pressing ctrl-w
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+# resize panes like vim
+bind < resize-pane -L 5
+bind > resize-pane -R 5
+bind - resize-pane -D 5
+bind + resize-pane -U 5
+
+bind -r C-h resize-pane -L
+bind -r C-j resize-pane -D
+bind -r C-k resize-pane -U
+bind -r C-l resize-pane -R
+
 # '0' is at the wrong end of the keyboard
 set -g base-index 1
  
@@ -28,6 +41,8 @@ set-option -g mouse-select-pane on
 set-option -g mouse-select-window on
 set-option -g mouse-resize-pane on
  
+set-option -g mouse-utf8 on
+
 # Scroll your way into copy mode (scrollback buffer)
 # and select text for copying with the mouse
 #setw -g mode-mouse on
@@ -38,3 +53,6 @@ set -g mode-mouse on
  
 # Don't lose track of SSH_AGENT etc. from parent environment.
 set -g update-environment -r
+
+set -g default-terminal "screen"
+
