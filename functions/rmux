@@ -1,0 +1,5 @@
+rmux() {
+  local server=$1
+  local session=$2
+  ssh $server -t "tmux a -t $session"
+}
