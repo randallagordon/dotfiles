@@ -131,7 +131,7 @@ zle -A .backward-kill-word vi-backward-kill-word
 zle -A .backward-delete-char vi-backward-delete-char
 
 
-n _update_ps1()
+_update_ps1()
 {
   export PROMPT="$(~/.dotfiles/submodules/powerline-zsh/powerline-zsh.py $?)"
 }
