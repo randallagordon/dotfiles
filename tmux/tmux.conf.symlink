@@ -23,15 +23,17 @@ bind k select-pane -U
 bind l select-pane -R
 
 # resize panes like vim
-bind < resize-pane -L 5
-bind > resize-pane -R 5
-bind - resize-pane -D 5
-bind + resize-pane -U 5
+bind < resize-pane -L 10
+bind > resize-pane -R 10
+bind - resize-pane -D 10
+bind + resize-pane -U 10
 
 bind -r C-h resize-pane -L
 bind -r C-j resize-pane -D
 bind -r C-k resize-pane -U
 bind -r C-l resize-pane -R
+
+bind-key @ command-prompt -p "create pane from:"  "join-pane -s ':%%'"
 
 # '0' is at the wrong end of the keyboard
 set -g base-index 1
