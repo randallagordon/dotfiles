@@ -1,3 +1,7 @@
+# Powerline!
+source ~/.local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf
+set-option -g status-utf8 on
+
 # Report that we can handle 256 colors
 set -g default-terminal "screen-256color"
  
