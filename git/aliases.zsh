@@ -6,6 +6,10 @@ then
   alias git=$hub_path
 fi
 
+# hub aliases
+alias gpr='git pull-request'
+alias gf='git fork'
+
 # The rest of my fun git aliases
 alias gl='git pull --prune'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
@@ -20,3 +24,4 @@ alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias ga='git add'
 alias go='git checkout'
 alias gh='git hist'
+
