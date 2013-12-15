@@ -118,7 +118,7 @@ def cwd(pl, segment_info, dir_shorten_len=None, dir_limit_depth=None, use_path_s
 
 def mode(pl):
     ret = [{}]
-    ret[0]['contents'] = '$'
+    ret[0]['contents'] = ''
 
     vimode = os.getenv('VIMODE', '')
     if vimode.startswith("insert"):

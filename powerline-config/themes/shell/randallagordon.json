@@ -18,6 +18,9 @@
 		},
 		"bgjobs": {
 			"after": " ⚙"
+		},
+		"mode": {
+			"before": "$"
 		}
 	},
 	"segments": {
