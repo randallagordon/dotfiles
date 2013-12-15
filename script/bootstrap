@@ -129,5 +129,8 @@ then
   fi
 fi
 
+# Powerline Stuff
+ln -s ~/.dotfiles/powerline-config ~/.config/powerline
+
 echo ''
 echo '  All installed!'
