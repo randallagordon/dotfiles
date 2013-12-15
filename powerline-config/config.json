@@ -28,7 +28,7 @@
 			"theme": "randallagordon"
 		},
 		"tmux": {
-			"colorscheme": "default",
+			"colorscheme": "randallagordon",
 			"theme": "default"
 		},
 		"vim": {

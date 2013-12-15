@@ -2,7 +2,7 @@
 	"default_module": "powerline.segments.common",
 	"segment_data": {
 		"uptime": {
-			"before": "⇑  "
+			"before": "⇑ "
 		},
 		"external_ip": {
 			"before": "ⓦ  "
@@ -34,12 +34,23 @@
 			{
 				"name": "date",
 				"args": {
-					"format": "%H:%M",
+					"format": "%H:%M:%S",
 					"istime": true
 				}
 			},
 			{
-				"name": "hostname"
+				"name": "external_ip"
+			},
+			{
+				"name": "network_load",
+				"args": {
+				}
+			},
+			{
+				"name": "hostname",
+				"args": {
+					"only_if_ssh": false
+				}
 			}
 		]
 	}
