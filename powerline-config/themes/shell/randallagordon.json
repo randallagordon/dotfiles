@@ -10,8 +10,14 @@
 		"virtualenv": {
 			"before": "ⓔ  "
 		},
+		"node": {
+			"before": "⬡  "
+		},
 		"branch": {
 			"before": " "
+		},
+		"bgjobs": {
+			"after": " ⚙"
 		}
 	},
 	"segments": {
@@ -38,15 +44,33 @@
 					"dir_limit_depth": 3
 				}
 			},
-      {
-        "name": "mode",
-        "module": "localsegments"
-      }
+			{
+				"name": "bgjobs",
+				"module": "localsegments"
+			},
+			{
+				"name": "mode",
+				"module": "localsegments"
+			}
 		],
 		"right": [
 			{
 				"module": "powerline.segments.shell",
 				"name": "last_pipe_status"
+			},
+			{
+				"module": "localsegments",
+				"name": "node"
+			},
+			{
+				"name": "date"
+			},
+			{
+				"name": "date",
+				"args": {
+					"format": "%H:%M:%S",
+					"istime": true
+				}
 			}
 		]
 	}

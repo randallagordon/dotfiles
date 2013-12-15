@@ -1,5 +1,5 @@
 {
-	"name": "Moloka - randallagordon",
+	"name": "Molokai - randallagordon",
 	"groups": {
 		"hostname":           { "fg": "brightyellow", "bg": "mediumorange" },
 		"user":               { "fg": "brightcyan",   "bg": "darkblue" },
@@ -18,8 +18,16 @@
 		"exit_success":       { "fg": "oldlace",      "bg": "green" },
 		"environment":        { "fg": "oldlace",      "bg": "green" },
 
+		"bgjobs":             { "fg": "white",        "bg": "mediumorange" },
+
 		"mode":               { "fg": "white",        "bg": "gray5" },
 		"mode_command":       { "fg": "darkestgreen", "bg": "mediumgreen" },
-		"mode_insert":        { "fg": "brightcyan",   "bg": "darkblue" }
+		"mode_insert":        { "fg": "brightcyan",   "bg": "darkblue" },
+
+		"date":               { "fg": "white",        "bg": "gray2" },
+		"time":               { "fg": "white",        "bg": "gray4" },
+		"time:divider":       { "fg": "white",        "bg": "gray4" },
+
+		"node":               { "fg": "gray1",        "bg": "green" }
 	}
 }

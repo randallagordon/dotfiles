@@ -19,6 +19,7 @@ fi
 
 function zle-line-init zle-line-finish zle-keymap-select {
 	export VIMODE="${${KEYMAP/vicmd/$VIMODE_COMMAND}/(main|viins)/$VIMODE_INSERT}"
+	export BGJOBS="`jobs -l | wc -l`"
 	zle reset-prompt
 	zle -R
 }

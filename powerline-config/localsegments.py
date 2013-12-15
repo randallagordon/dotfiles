@@ -127,3 +127,18 @@ def mode(pl):
         ret[0]['highlight_group'] = 'mode_command'
 
     return ret
+
+
+def bgjobs(pl):
+    jobs = os.getenv('BGJOBS', '')
+    if(jobs == "0"):
+        return None
+    return jobs
+
+
+def node(pl):
+    version = subprocess.Popen('node --version', stdout=subprocess.PIPE,
+                               stderr=subprocess.PIPE,
+                               shell=True).stdout.read().strip()
+
+    return version
