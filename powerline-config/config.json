@@ -24,8 +24,8 @@
 			}
 		},
 		"shell": {
-			"colorscheme": "default",
-			"theme": "default"
+			"colorscheme": "molokai-randallagordon",
+			"theme": "randallagordon"
 		},
 		"tmux": {
 			"colorscheme": "default",

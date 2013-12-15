@@ -1,5 +1,11 @@
 {
 	"colors": {
+		"pinkred": 161,
+		"graygray": 237,
+		"lightcyan": 123,
+		"brilliantcyan": 195,
+		"brue": 87,
+
 		"black": 16,
 		"white": 231,
 
