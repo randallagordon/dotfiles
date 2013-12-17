@@ -20,6 +20,7 @@ alias gca='git commit -a'
 alias gco='git checkout'
 alias gb='git branch'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
+alias g='gs' # Because I'm *really* lazy
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias ga='git add'
 alias go='git checkout'
