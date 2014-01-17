@@ -7,8 +7,9 @@ set -g default-terminal "screen-256color"
  
 # Rebind prefix to avoid conflicts
 #unbind C-b
-#set -g prefix C-q
-#bind C-q send-prefix
+# ...actually, just bind Q as an extra escape for now
+set -g prefix C-q
+bind C-q send-prefix
  
 set -g default-command /bin/zsh 
 set -g default-shell /bin/zsh

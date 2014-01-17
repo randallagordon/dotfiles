@@ -10,3 +10,6 @@ alias ........="cd ../../../../../../.."
 alias .........="cd ../../../../../../../.."
 
 alias sagi="sudo apt-get install"
+
+alias ni="node-inspector"
+alias ni8043="node-inspector --web-port=8043"
