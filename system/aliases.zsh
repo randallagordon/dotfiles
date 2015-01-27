@@ -1,6 +1,4 @@
-alias ls="ls -F --color"
-alias l="ls -lAh --color"
-alias ll="ls -l --color"
-alias la='ls -A --color'
-
-alias grep='grep --color'
+alias ls="ls -F"
+alias l="ls -lAh"
+alias ll="ls -l"
+alias la='ls -A'
