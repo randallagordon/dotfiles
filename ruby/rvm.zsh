@@ -1,1 +1,1 @@
-source /home/randall/.rvm/scripts/rvm
+#source /home/randall/.rvm/scripts/rvm
