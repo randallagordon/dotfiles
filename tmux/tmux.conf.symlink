@@ -1,5 +1,14 @@
-# Powerline!
-source ~/.local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf
+# Enable Powerline in Linux
+if [[ -r ~/.local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.zsh ]]; then
+    source ~/.local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf
+fi
+
+# Enable Powerline in OSX
+if [[ -r /usr/local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.zsh ]]; then
+    source /usr/local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf
+fi
+
+# UTF8 FTW!
 set-option -g status-utf8 on
 
 # Report that we can handle 256 colors
