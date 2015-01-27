@@ -1,5 +1,10 @@
-# Powerline!
-source ~/.local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf
+# Enable Powerline in Linux
+#source ~/.local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf
+
+# Enable Powerline in OSX
+source /usr/local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf
+
+# UTF8 FTW!
 set-option -g status-utf8 on
 
 # Report that we can handle 256 colors
@@ -32,6 +37,7 @@ bind < resize-pane -L 10
 bind > resize-pane -R 10
 bind - resize-pane -D 10
 bind + resize-pane -U 10
+bind = resize-pane -U 10
 
 bind -r C-h resize-pane -L
 bind -r C-j resize-pane -D
