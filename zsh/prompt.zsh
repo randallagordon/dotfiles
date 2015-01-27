@@ -1,31 +1,37 @@
-# Ensure custom segments are in the path
-export PYTHONPATH="$HOME/.dotfiles/powerline-config:$PYTHONPATH"
-
 if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# Ensure custom Powerline segments are in the path
+export PYTHONPATH="$HOME/.dotfiles/powerline-config:$PYTHONPATH"
+
+# Enable Powerline in Linux
 if [[ -r ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
     source ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 fi
 
-if [[ "$VIMODE_COMMAND" == "" ]]; then
-	VIMODE_COMMAND="command"
+# Enable Powerline in OSX
+if [[ -r /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
+    source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 fi
 
-if [[ "$VIMODE_INSERT" == "" ]]; then
-	VIMODE_INSERT="insert"
-fi
+### New version of Powerline has mode and jobs segments so this is unnecessary!
+#if [[ "$VIMODE_COMMAND" == "" ]]; then
+	#VIMODE_COMMAND="command"
+#fi
 
-function zle-line-init zle-line-finish zle-keymap-select {
-	export VIMODE="${${KEYMAP/vicmd/$VIMODE_COMMAND}/(main|viins)/$VIMODE_INSERT}"
-	export BGJOBS="`jobs -l | wc -l`"
-	zle reset-prompt
-	zle -R
-}
-zle -N zle-line-init
-zle -N zle-line-finish
-zle -N zle-keymap-select
+#if [[ "$VIMODE_INSERT" == "" ]]; then
+	#VIMODE_INSERT="insert"
+#fi
+#function zle-line-init zle-line-finish zle-keymap-select {
+	#export VIMODE="${${KEYMAP/vicmd/$VIMODE_COMMAND}/(main|viins)/$VIMODE_INSERT}"
+	#export BGJOBS="`jobs -l | wc -l`"
+	#zle reset-prompt
+	#zle -R
+#}
+#zle -N zle-line-init
+#zle -N zle-line-finish
+#zle -N zle-keymap-select
 
 bindkey -a u undo
 bindkey -a '^R' redo
