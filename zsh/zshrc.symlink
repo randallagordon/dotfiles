@@ -1,8 +1,9 @@
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
-# your project folder that we can `c [tab]` to
+# your project and sandbox folders that we can `c [tab]` to
 export PROJECTS=~/Projects
+export SANDBOX=~/Sandbox
 
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
@@ -39,5 +40,3 @@ done
 
 unset config_files
 
-# added by travis gem
-[ -f /home/randall/.travis/travis.sh ] && source /home/randall/.travis/travis.sh
