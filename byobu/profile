@@ -1,1 +1,1 @@
-/usr/share/byobu/profiles/common
+source $BYOBU_PREFIX/share/byobu/profiles/common
