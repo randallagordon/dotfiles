@@ -45,7 +45,8 @@ zle -N newtab
 # bindkey '^[[5C' end-of-line
 # bindkey '^[[3~' delete-char
 # bindkey '^[^N' newtab
-# bindkey '^?' backward-delete-char
+
+# Vim Mode with 'jj' to exit INSERT
 bindkey -v
 bindkey -M viins 'jj' vi-cmd-mode
 
@@ -58,3 +59,25 @@ zle -N zshexit
 bindkey 'ZZ' zshexit
 
 # TODO: Make setup match Vim more closely, especially work on making del/backspace and home/end work properly
+
+# Re-map some of the more common shell motions
+# Essentials
+bindkey '^b' backward-char
+bindkey '^f' forward-char
+bindkey '^d' delete-char
+bindkey '^_' undo
+
+# Movement
+bindkey '^a' beginning-of-line
+bindkey '^e' end-of-line
+
+# History
+bindkey '^p' up-history
+bindkey '^n' down-history
+#bindkey '^r' history-incremental-search-backward
+#bindkey '^f' history-incremental-search-forward
+
+# Kill/yank
+bindkey '^?' backward-delete-char
+bindkey '^h' backward-delete-char
+bindkey '^w' backward-kill-word
