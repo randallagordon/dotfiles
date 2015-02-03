@@ -1,10 +1,5 @@
 # Use `hub` as our git wrapper:
-#   http://defunkt.github.com/hub/
-hub_path=$(which hub)
-if (( $+commands[hub] ))
-then
-  alias git=$hub_path
-fi
+eval "$(hub alias -s)"
 
 # hub aliases
 alias gpr='git pull-request'
