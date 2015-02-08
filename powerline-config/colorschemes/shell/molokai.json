@@ -1,0 +1,21 @@
+{
+	"name": "Moloka - randallagordon",
+	"groups": {
+		"hostname":           { "fg": "brightyellow", "bg": "mediumorange" },
+		"user":               { "fg": "brightcyan",   "bg": "darkblue" },
+		"superuser":          { "fg": "gray9",        "bg": "red", "attr": ["bold"] },
+		"virtualenv":         { "fg": "gray9",        "bg": "green" },
+
+		"branch":             { "fg": "white",        "bg": "gray4" },
+		"branch_dirty":       { "fg": "oldlace",      "bg": "pinkred" },
+		"branch_clean":       { "fg": "gray1",        "bg": "brightgreen" },
+
+		"cwd":                { "fg": "gray9",        "bg": "gray2" },
+		"cwd:current_folder": { "fg": "white",        "bg": "gray4", "attr": ["bold"] },
+		"cwd:divider":        { "fg": "gray7",        "bg": "gray2" },
+
+		"exit_fail":          { "fg": "oldlace",      "bg": "red" },
+		"exit_success":       { "fg": "oldlace",      "bg": "green" },
+		"environment":        { "fg": "oldlace",      "bg": "green" }
+	}
+}

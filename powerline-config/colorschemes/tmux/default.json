@@ -1,0 +1,25 @@
+{
+	"groups": {
+		"active_window_status": {"fg": "darkblue",   "bg": "gray0",    "attrs": []},
+		"window_status":        {"fg": "gray70",     "bg": "gray0",    "attrs": []},
+		"activity_status":      {"fg": "yellow",     "bg": "gray0",    "attrs": []},
+		"bell_status":          {"fg": "red",        "bg": "gray0",    "attrs": []},
+		"window":               {"fg": "gray6",      "bg": "gray0",    "attrs": []},
+		"window:divider":       {"fg": "gray4",      "bg": "gray0",    "attrs": []},
+		"window:current":       {"fg": "mediumcyan", "bg": "darkblue", "attrs": []},
+		"window_name":          {"fg": "white",      "bg": "darkblue", "attrs": ["bold"]},
+		"session":              {"fg": "black",      "bg": "gray90",   "attrs": ["bold"]},
+		"session:prefix":       {"fg": "gray90",     "bg": "darkblue", "attrs": ["bold"]},
+
+		"weather":                   { "fg": "gray8", "bg": "gray0", "attrs": [] },
+		"weather_temp_gradient":     { "fg": "blue_red", "bg": "gray0", "attrs": [] },
+		"weather_condition_hot":     { "fg": "khaki1", "bg": "gray0", "attrs": [] },
+		"weather_condition_snowy":   { "fg": "skyblue1", "bg": "gray0", "attrs": [] },
+		"weather_condition_rainy":   { "fg": "skyblue1", "bg": "gray0", "attrs": [] },
+
+		"fuzzy_time":               { "fg": "white",        "bg": "gray4" },
+
+		"network_load":              { "fg": "gray8", "bg": "gray0", "attrs": [] },
+		"network_load_gradient":     { "fg": "green_yellow_orange_red", "bg": "gray0", "attrs": [] }
+	}
+}

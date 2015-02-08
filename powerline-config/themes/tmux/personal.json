@@ -1,0 +1,27 @@
+{
+	"segments": {
+		"right": [
+			{
+				"function": "powerline.segments.common.sys.uptime",
+				"priority": 50
+			},
+			{
+				"function": "powerline.segments.common.sys.system_load",
+				"priority": 50
+			},
+			{
+				"function": "powerline.segments.common.time.date"
+			},
+			{
+				"function": "powerline.segments.common.time.fuzzy_time"
+			},
+      {
+        "function": "powerline.segments.common.net.external_ip",
+        "before": "ⓦ "
+      },
+			{
+				"function": "powerline.segments.common.net.hostname"
+			}
+		]
+	}
+}
