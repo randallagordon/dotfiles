@@ -1,2 +1,3 @@
 caption splitonly ""
 hardstatus string "%{= kK}%{w}%H %{K}%= %{= kw}%?%-Lw%?%{B}(%{W}%n*%f %t%?(%u)%?%{B})%{w}%?%+Lw%?%?%= %{K}%{B} %{w}%m/%d %c:%s%{K}"
+termcapinfo xterm|xterms|xs ti@:te=\E[2J]
