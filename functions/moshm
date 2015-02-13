@@ -1,0 +1,5 @@
+# Hacky mouse fix for mosh
+moshm() {
+	perl -E ' print "\e[?1005h\e[?1002h" '
+	mosh "$@"
+}
