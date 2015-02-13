@@ -9,6 +9,9 @@ export PYTHONPATH="$HOME/.dotfiles/powerline-config:$PYTHONPATH"
 if [[ -r ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
     source ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 fi
+if [[ -r ~/src/powerline/powerline/bindings/zsh/powerline.zsh ]]; then
+    source ~/src/powerline/powerline/bindings/zsh/powerline.zsh
+fi
 
 # Enable Powerline in OSX
 if [[ -r /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
