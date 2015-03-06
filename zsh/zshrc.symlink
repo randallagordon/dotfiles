@@ -1,9 +1,10 @@
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
-# your project and sandbox folders that we can `c [tab]` to
+# your project, sandbox and document folders that we can `c/s/d [tab]` to them
 export PROJECTS=~/Projects
 export SANDBOX=~/Sandbox
+export DOCUMENTS=~/Documents
 
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
