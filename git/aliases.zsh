@@ -18,6 +18,6 @@ alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias g='gs' # Because I'm *really* lazy
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias ga='git add'
-alias go='git checkout'
 alias gh='git hist'
+alias gun='git branch -v --no-merge'
 
