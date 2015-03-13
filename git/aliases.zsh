@@ -14,10 +14,12 @@ alias gc='git commit'
 alias gca='git commit -a'
 alias gco='git checkout'
 alias gb='git branch'
+alias gbv='git branch -va'
+alias gun='git branch -v --no-merge'
+alias gbd='git branch -d'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias g='gs' # Because I'm *really* lazy
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias ga='git add'
 alias gh='git hist'
-alias gun='git branch -v --no-merge'
-
+alias gcon='git diff --name-only --diff-filter=U'
