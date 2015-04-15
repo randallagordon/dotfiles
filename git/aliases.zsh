@@ -23,3 +23,6 @@ alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias ga='git add'
 alias gh='git hist'
 alias gcon='git diff --name-only --diff-filter=U'
+
+# QuickLeft goodies
+alias prme='cat ~/pr-template.md | pbcopy'
