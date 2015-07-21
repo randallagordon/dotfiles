@@ -4,3 +4,6 @@
 *.swp
 *.rbc
 NOTES.md
+.ruby-version
+.npmrc
+Session.vim
