@@ -69,3 +69,5 @@ set -g update-environment -r
 
 set -g default-terminal "screen"
 
+# Let's get historical!
+set -g history-limit 100000
