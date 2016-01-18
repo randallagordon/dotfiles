@@ -1,5 +1,5 @@
-export PATH="./bin:$HOME/bin:$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:$HOME/.sfs:$ZSH/bin:$PATH"
+export PATH="./bin:./node_modules/.bin:$HOME/bin:$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:$HOME/.sfs:$ZSH/bin:$PATH"
 
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
-export NODE_PATH="/usr/local/lib/jsctags:$NODE_PATH"
+export NODE_PATH="$NODE_PATH:/usr/local/lib/node_modules:/usr/local/lib/jsctags"

@@ -1,6 +1,8 @@
 {
+  "parser": "babel-eslint",
   "env": {
-    "node": true
+    "node": true,
+    "browser: true"
   },
   "ecmaFeatures": {
     "jsx": true

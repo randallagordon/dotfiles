@@ -1,0 +1,14 @@
+function repod {
+  echo Removing xcworkspace, Podfile.lock and Pods/
+  rm -r *.xcworkspace
+
+  rm Podfile.lock
+  rm -rf Pods/
+  echo Blowing away pod master
+  pod repo remove master
+  pod setup
+  echo Running pod install
+  pod install
+  echo Opening xcworkspace file
+  open *.xcworkspace
+}
