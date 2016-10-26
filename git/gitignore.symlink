@@ -6,5 +6,6 @@
 NOTES.md
 .ruby-version
 .npmrc
+.nvmrc
 Session.vim
 .lvimrc

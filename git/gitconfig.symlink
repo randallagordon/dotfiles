@@ -18,6 +18,7 @@
         wtf     = !$ZSH/bin/git-wtf
         rank-contributers = !$ZSH/bin/git-rank-contributers
         count   = !git shortlog -sn
+        dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
 [color]
         diff = auto
         status = auto
@@ -26,6 +27,7 @@
 [core]
         excludesfile = ~/.gitignore
         editor = vim
+        pager = diff-so-fancy | less --tabs=4 -RFX
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -36,3 +38,11 @@
         autocorrect = 1
 [push]
         default = simple
+[rebase]
+  autoStash = true
+[url "git@github.com:"]
+  insteadOf = "https://github.com/"
+[url "git@github.com:"]
+  pushInsteadOf = "git://github.com/"
+[url "git@github.com:"]
+  pushInsteadOf = "https://github.com/"
