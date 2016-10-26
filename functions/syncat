@@ -1,0 +1,1 @@
+highlight -O rtf -S js -s molokai -j 3 -K 24 -n $1 | pbcopy
