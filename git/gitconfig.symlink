@@ -19,6 +19,9 @@
         rank-contributers = !$ZSH/bin/git-rank-contributers
         count   = !git shortlog -sn
         dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
+        ignore = !git update-index --assume-unchanged
+        unignore = !git update-index --no-assume-unchanged
+        ignored = !git ls-files -v | grep ^[a-z]
 [color]
         diff = auto
         status = auto
@@ -40,9 +43,7 @@
         default = simple
 [rebase]
   autoStash = true
-[url "git@github.com:"]
-  insteadOf = "https://github.com/"
-[url "git@github.com:"]
-  pushInsteadOf = "git://github.com/"
-[url "git@github.com:"]
-  pushInsteadOf = "https://github.com/"
+[remote "origin"]
+	prune = true
+[fetch]
+	prune = true

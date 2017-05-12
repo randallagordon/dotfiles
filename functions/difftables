@@ -1,0 +1,3 @@
+function difftables() {
+  vimdiff <(psql $1 -c "\d+ $3") <(psql $2 -c "\d+ $3")
+}
