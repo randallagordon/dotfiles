@@ -65,3 +65,18 @@ set -g default-terminal "screen"
 
 # Let's get historical!
 set -g history-limit 100000
+
+# Auto-restore continuum session after server restart
+set -g @continuum-restore 'on'
+
+################################################################################
+# Tmux Plugin Manager
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+# set -g @plugin 'tmux-plugins/tmux-yank'
+# set -g @plugin 'tmux-plugins/tmux-open'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+
+# 
+run '~/.tmux/plugins/tpm/tpm'
