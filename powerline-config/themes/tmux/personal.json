@@ -15,10 +15,6 @@
 			{
 				"function": "powerline.segments.common.time.fuzzy_time"
 			},
-      {
-        "function": "powerline.segments.common.net.external_ip",
-        "before": "ⓦ "
-      },
 			{
 				"function": "powerline.segments.common.net.hostname"
 			}
