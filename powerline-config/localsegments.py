@@ -9,6 +9,7 @@ import re
 
 from powerline.theme import requires_segment_info
 
+from powerline.bindings.vim import buffer_name
 
 def get_git_status():
     has_pending_commits = True
