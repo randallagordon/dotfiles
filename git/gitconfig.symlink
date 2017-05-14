@@ -1,6 +1,3 @@
-# Sample gitconfig
-#
-
 [hub]
         protocol = https
 [user]
@@ -47,3 +44,6 @@
 	prune = true
 [fetch]
 	prune = true
+
+[includeIf "gitdir:~/Projects/doing/"]
+  path = ~/.gitconfig-doing
