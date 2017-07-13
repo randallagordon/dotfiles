@@ -1,5 +1,5 @@
 brew install zsh
-brew install vim --with-lua
+brew install vim --with-lua --with-clientserver
 brew install ctags
 brew install node
 brew install python
@@ -26,8 +26,12 @@ brew cask install caffeine
 brew cask install numi
 brew cask install evernote
 brew cask install spectacle
+brew cask install ngrok
 brew cask install noizio
 brew cask install cumulus
 brew cask install soundcleod
 brew cask install spotify
+brew cask install the-unarchiver
+brew cask install virtualbox
+brew cask install virtualbox-extension-pack
 brew tap homebrew/services
