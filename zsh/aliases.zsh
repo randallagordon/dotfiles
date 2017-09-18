@@ -26,3 +26,6 @@ alias mosh="moshm"
 alias ag='\ag --pager="less -XFR"'
 
 alias j='jira'
+
+alias canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
+alias canary-headless="canary --remote-debugging-port=9222 --disable-gpu --headless"
