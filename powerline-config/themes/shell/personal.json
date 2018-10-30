@@ -5,9 +5,7 @@
 				"function": "powerline.segments.common.bat.battery",
 				"priority": 50,
         "args": {
-          "gamify": true,
-          "full_heart": "⚡",
-          "empty_heart": "⚡"
+          "gamify": true
         }
 			},
 			{
@@ -16,11 +14,11 @@
 			},
 			{
 				"function": "powerline.segments.common.env.user",
-				"priority": 30
+				"priority": 10
 			},
 			{
 				"function": "localsegments.branchdeluxe",
-				"priority": 40
+				"priority": 500
 			},
 			{
 				"function": "powerline.segments.shell.cwd",
@@ -41,17 +39,17 @@
 			},
 			{
 				"function": "localsegments.node",
-				"priority": 10,
+				"priority": 30,
         "before": "⬡ "
 			},
 			{
 				"function": "powerline.segments.common.env.virtualenv",
-				"priority": 50,
+				"priority": 20,
         "before": "🐍  "
 			},
 			{
 				"function": "localsegments.ruby",
-				"priority": 50,
+				"priority": 20,
         "before": "💎  "
 			},
 			{
