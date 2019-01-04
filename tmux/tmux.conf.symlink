@@ -2,7 +2,10 @@
 #source ~/.local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf
 
 # Enable Powerline in OSX
-source /usr/local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf
+# source /usr/local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf
+
+# Enable custom local Powerline
+source ~/src/powerline/powerline/bindings/tmux/powerline.conf
 
 # UTF8 FTW!
 # set-option -g status-utf8 on
@@ -10,16 +13,18 @@ source /usr/local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.
 # Report that we can handle 256 colors
 set -g default-terminal "screen-256color"
 
+set-window-option -g xterm-keys on
+
 # Set a low escape time so input lag is reduced (primarily in vim)
 set-option -s escape-time 10
- 
+
 # Rebind prefix to avoid conflicts
 #unbind C-b
 # ...actually, just bind Q as an extra escape for now
 set -g prefix C-q
 bind C-q send-prefix
- 
-set -g default-command /bin/zsh 
+
+set -g default-command /bin/zsh
 set -g default-shell /bin/zsh
 
 setw -g mode-keys vi
@@ -55,7 +60,7 @@ setw -g pane-base-index 1
 
 # Using `q` to display pane #s disappears too quickly!
 set display-panes-time 3000
- 
+
 # Just click it
 set-option -g mouse on
 # run-shell ~/.dotfiles/tmux/scroll_copy_mode.tmux
@@ -64,7 +69,7 @@ bind -n WheelDownPane select-pane -t= \; send-keys -M
 
 # Toggle sending keystrokes to all panes in a window
 #bind-key a set-window-option synchronize-panes
- 
+
 # Don't lose track of SSH_AGENT etc. from parent environment.
 set -g update-environment -r
 
@@ -85,5 +90,4 @@ set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-resurrect'
 set -g @plugin 'tmux-plugins/tmux-continuum'
 
-# 
 run '~/.tmux/plugins/tpm/tpm'
