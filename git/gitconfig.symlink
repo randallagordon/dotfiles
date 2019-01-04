@@ -1,5 +1,5 @@
 [hub]
-        protocol = https
+	protocol = git
 [user]
         name = Randall A. Gordon
         email = randall@randallagordon.com
