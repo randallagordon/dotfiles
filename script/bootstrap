@@ -139,3 +139,5 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 echo ''
 echo '  All installed!'
+echo ''
+echo '  While in tmux, use `prefix + I` to install tmux plugins'
