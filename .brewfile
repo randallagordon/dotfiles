@@ -3,6 +3,7 @@ brew tap homebrew/services
 brew install zsh
 brew install vim --with-lua --with-clientserver
 brew install ctags
+brew install cmake
 brew install node
 brew install python
 brew install elasticsearch
@@ -14,6 +15,8 @@ brew install diff-so-fancy
 brew install the_silver_searcher
 brew install exa
 brew install ios-webkit-debug-proxy
+brew install fd
+brew install bat
 brew cask install google-chrome
 brew cask install dropbox
 brew cask install iterm2
