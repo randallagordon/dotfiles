@@ -1,7 +1,3 @@
-if [ -d "$HOME/.local/bin" ]; then
-    PATH="$HOME/.local/bin:$PATH"
-fi
-
 # Ensure custom Powerline segments are in the path
 export PYTHONPATH="$HOME/.dotfiles/powerline-config:$PYTHONPATH"
 if [ -d "$HOME/src/powerline/scripts" ]; then
