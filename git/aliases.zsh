@@ -21,7 +21,6 @@ alias gbv='git branch -va'
 alias gun='git branch -v --no-merge'
 alias gbd='git branch -d'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
-alias g='gs' # Because I'm *really* lazy
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias ga='git add'
 alias gh='git hist'
@@ -33,3 +32,10 @@ alias grbm='git remote update && git checkout $(git rev-parse origin/master)' # 
 alias gcon='git diff --name-only --diff-filter=U' # 'git conflicts'
 
 alias prme='cat ~/pr-template.md | pbcopy'
+
+# Because I'm *really* lazy, this allows `g` act as
+# - an alias to `git` when provided arguments
+# - an alias to `gs` (`git status -sb` above) when not provided arguments
+g() {
+  [ $# -gt 0 ] && git $@ || gs
+}
