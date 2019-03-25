@@ -8,5 +8,6 @@ NOTES.md
 .npmrc
 .nvmrc
 Session.vim
+.vimsessions
 .lvimrc
 .tern-project
