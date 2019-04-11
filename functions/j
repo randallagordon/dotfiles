@@ -1,0 +1,12 @@
+j() {
+  NUMBERREGEX='^[0-9]+$'
+  KEY=KOAN
+
+  if [ $# -eq 0 ]; then
+    jira i $(git rev-parse --abbrev-ref HEAD)
+  elif [[ $# -eq 1 && $1 =~ $NUMBERREGEX ]]; then
+    jira i "$KEY"-"$1"
+  else
+    jira $@
+  fi
+}
