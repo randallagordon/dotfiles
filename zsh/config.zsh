@@ -69,6 +69,8 @@ bindkey '^b' backward-char
 bindkey '^f' forward-char
 bindkey '^d' delete-char
 bindkey '^_' undo
+bindkey '^[b' backward-word
+bindkey '^[f' forward-word
 
 # Movement
 bindkey '^a' beginning-of-line
@@ -77,10 +79,12 @@ bindkey '^e' end-of-line
 # History
 bindkey '^p' up-history
 bindkey '^n' down-history
-#bindkey '^r' history-incremental-search-backward
-#bindkey '^f' history-incremental-search-forward
+bindkey '^r' history-incremental-search-backward
+bindkey '^f' history-incremental-search-forward
 
 # Kill/yank
 bindkey '^?' backward-delete-char
 bindkey '^h' backward-delete-char
 bindkey '^w' backward-kill-word
+bindkey '^k' vi-kill-eol
+bindkey '^[d' kill-word
