@@ -7,7 +7,7 @@ alias gf='git fork'
 
 # The rest of my fun git aliases
 alias gl='git pull --prune'
-alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev=7 --date=relative"
 alias gp='git push'
 alias gpo='git push -u origin'
 alias gpuo='git push -u origin'
@@ -32,6 +32,7 @@ alias gh='git hist'
 alias gr='git rebase'
 alias gwt='git worktree'
 alias grp='git rev-parse'
+alias gbr='git rev-parse --abbrev-ref HEAD' # Get current branch name
 alias gru='git remote update'
 alias grbm='git remote update && git checkout $(git rev-parse origin/master)' # 'git reset branch [to] master'
 alias gcon='git diff --name-only --diff-filter=U' # 'git conflicts'
