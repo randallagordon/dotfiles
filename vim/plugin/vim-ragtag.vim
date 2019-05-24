@@ -1,0 +1,3 @@
+" inoremap <M-o>       <Esc>o
+" inoremap <C-j>       <Down>
+let g:ragtag_global_maps=1 " TODO: Sort out if mappings are working...

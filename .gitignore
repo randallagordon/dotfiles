@@ -2,3 +2,5 @@ Session.vim
 *.pyc
 byobu/.ssh-agent
 byobu/windows
+vim/bundle
+vim/.netrwhist
