@@ -1,0 +1,34 @@
+set nocompatible                             " 👌
+
+set runtimepath+=~/.vim/config
+runtime config/neobundle.vim                 " Must be first
+runtime config/colorscheme.vim               " Must be second
+runtime config/filetypes.vim                 " Should be third?
+runtime config/folding.vim
+runtime config/mouse.vim
+runtime config/powerline.vim
+runtime config/statusline.vim
+runtime config/wild.vim
+runtime config/search.vim
+runtime config/undo.vim
+runtime config/spelling.vim
+runtime config/commands.vim
+runtime config/mappings.vim
+runtime config/listchars.vim                 " Must be after mappings?
+runtime config/relative_linenumbers.vim      " Incurs a small performance hit
+runtime config/restore_cursor_position.vim
+runtime config/diff_goodies.vim
+
+set smarttab
+set showmatch                                " Bracket matchin'!
+set ttyfast                                  " Zoom zoom! 🏎️
+set encoding=utf-8                           " 👍
+set conceallevel=1                           " 🙈
+set backspace=indent,eol,start               " Make backspace work...
+set ts=2 sts=2 sw=2 expandtab                " 🚫 tabs!
+set formatoptions+=r                         " Keep comments commenting...
+
+"set ttimeoutlen=10 " Might help with motions/escaping not playing nice
+" http://www.polarhome.com/vim/manual/v57/options.html#'timeoutlen'
+
+filetype plugin indent on                    " Last so filetype detection works
