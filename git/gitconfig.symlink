@@ -1,49 +1,68 @@
 [hub]
 	protocol = git
+
 [user]
-        name = Randall A. Gordon
-        email = randall@randallagordon.com
+  name = Randall A. Gordon
+  email = randall@randallagordon.com
+
 [alias]
-        co = checkout
-        ci = commit
-        st = status
-        br = branch
-        hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-        type = cat-file -t
-        dump = cat-file -p
-        promote = !$ZSH/bin/git-promote
-        wtf     = !$ZSH/bin/git-wtf
-        rank-contributers = !$ZSH/bin/git-rank-contributers
-        count   = !git shortlog -sn
-        dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
-        ignore = !git update-index --assume-unchanged
-        unignore = !git update-index --no-assume-unchanged
-        ignored = !git ls-files -v | grep ^[a-z]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+  promote = !$ZSH/bin/git-promote
+  wtf     = !$ZSH/bin/git-wtf
+  rank-contributers = !$ZSH/bin/git-rank-contributers
+  count   = !git shortlog -sn
+  dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
+  ignore = !git update-index --assume-unchanged
+  unignore = !git update-index --no-assume-unchanged
+  ignored = !git ls-files -v | grep ^[a-z]
+  cnv = commit --no-verify
+  anv = commit --amend --no-verify
+  anvne = commit --amend --no-verify --no-edit
+  names = show --name-only
+
 [color]
-        diff = auto
-        status = auto
-        branch = auto
-        ui = true
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
+
 [core]
-        excludesfile = ~/.gitignore
-        editor = vim
-        pager = diff-so-fancy | less --tabs=4 -RFX
+  excludesfile = ~/.gitignore
+  editor = vim
+  pager = diff-so-fancy | less --tabs=4 -RFX
+
 [apply]
-        whitespace = nowarn
+  whitespace = nowarn
+
 [mergetool]
-        keepBackup = false
+  keepBackup = false
+
 [difftool]
-        prompt = false
+  prompt = false
+
 [help]
-        autocorrect = 1
+  autocorrect = 1
+
 [push]
-        default = simple
+  default = simple
+
 [rebase]
   autoStash = true
+
 [remote "origin"]
 	prune = true
+
 [fetch]
 	prune = true
 
 [includeIf "gitdir:~/Projects/doing/"]
   path = ~/.gitconfig-doing
+
+[includeIf "gitdir:~/Projects/koaninc/"]
+  path = ~/.gitconfig-koan
