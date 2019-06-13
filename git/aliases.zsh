@@ -20,22 +20,28 @@ alias gdsf='git dsf' # https://github.com/so-fancy/diff-so-fancy
 alias gc='git commit'
 alias gcup='git commit --amend --no-edit --no-verify'
 alias gco='git checkout'
-alias gcom='git checkout $(git rev-parse master)'
+alias gcm='git checkout $(git rev-parse upstream/master)'
+alias gcom='git checkout $(git rev-parse origin/master)'
 alias gb='git branch'
 alias gbv='git branch -va'
 alias gun='git branch -v --no-merge'
 alias gbd='git branch -d'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
-alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias ga='git add'
 alias gh='git hist'
-alias gr='git rebase'
 alias gwt='git worktree'
 alias grp='git rev-parse'
 alias gbr='git rev-parse --abbrev-ref HEAD' # Get current branch name
 alias gru='git remote update'
+alias gr='git rebase'
+alias grom='git rebase origin/master'
+alias grum='git rebase upstream/master'
 alias grbm='git remote update && git checkout $(git rev-parse origin/master)' # 'git reset branch [to] master'
 alias gcon='git diff --name-only --diff-filter=U' # 'git conflicts'
+alias grmdeleted="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+
+# Create `g1` through `g10` for quick `git log -#`ing
+for i in {1..10}; do alias g$i="glog -$i"; done
 
 alias prme='cat ~/pr-template.md | pbcopy'
 
