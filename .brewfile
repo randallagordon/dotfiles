@@ -1,7 +1,7 @@
 brew tap caskroom/cask
 brew tap homebrew/services
 brew install zsh
-brew install vim --with-lua --with-clientserver
+brew install vim
 brew install ctags
 brew install cmake
 brew install node
@@ -17,6 +17,7 @@ brew install exa
 brew install ios-webkit-debug-proxy
 brew install fd
 brew install bat
+brew install weechat --with-perl --with-python
 brew cask install google-chrome
 brew cask install dropbox
 brew cask install iterm2
