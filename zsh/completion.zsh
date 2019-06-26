@@ -5,4 +5,4 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' insert-tab pending
 
 # menu-y goodness
-zstyle ':completion:*' menu yes select
+zstyle ':completion:*' menu select
