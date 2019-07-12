@@ -3,6 +3,7 @@ augroup similar_filetype_mappings
   " autocmd BufNewFile,BufRead *.tsx,*.jsx setfiletype typescript.tsx
   " autocmd BufNewFile,BufRead .jshintrc setfiletype javascript
   " autocmd BufNewFile,BufRead *.md setfiletype markdown
+  autocmd BufNewFile,BufRead ~/.localrc setfiletype zsh
   autocmd BufNewFile,BufRead *.rss setfiletype xml
 augroup END
 
