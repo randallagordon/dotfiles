@@ -6,6 +6,8 @@ j() {
     jira i $(git rev-parse --abbrev-ref HEAD)
   elif [[ $# -eq 1 && $1 =~ $NUMBERREGEX ]]; then
     jira i "$KEY"-"$1"
+  elif [[ $# -eq 1 && $1 == "o" ]]; then
+    jira o $(git rev-parse --abbrev-ref HEAD)
   else
     jira $@
   fi
