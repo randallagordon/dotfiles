@@ -44,6 +44,7 @@ NeoBundle 'suan/vim-instant-markdown', {
   \      'mac': 'npm -g install instant-markdown-d'
   \   }
   \ }
+NeoBundle 'ruanyl/coverage.vim'
 
 " Motions
 NeoBundle 'easymotion/vim-easymotion'
@@ -100,7 +101,7 @@ NeoBundle 'moll/vim-node'
 " Google Maktaba/Glaive ecosystem
 " NeoBundle 'google/vim-maktaba'
 " NeoBundle 'google/vim-glaive'
-" NeoBundle 'google/vim-coverage'
+" NeoBundle 'google/vim-coverage'       " No jest/istanbul support
 " call glaive#Install() " Put this at the end of neobundle.vim?
 
 " Not loading--why?
