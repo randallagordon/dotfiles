@@ -1,6 +1,7 @@
 " Save some damn time!
 inoremap jj <ESC>
 let mapleader = ","
+let maplocalleader = ",,"
 map ; :
 noremap ;; ;
 
