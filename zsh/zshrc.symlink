@@ -41,3 +41,8 @@ then
   source ~/.localrc
 fi
 
+# For some reason, if this gets removed in favor of the instantiation in `node/nvm.zsh`
+# the version resets back to `system` instead of using version from the previous shell
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
