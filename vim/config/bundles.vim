@@ -45,6 +45,12 @@ NeoBundle 'suan/vim-instant-markdown', {
   \   }
   \ }
 NeoBundle 'ruanyl/coverage.vim'
+NeoBundle 'paulkass/jira-vim', {
+  \   'build_commands': ['pip3'],
+  \   'build': {
+  \      'mac': 'pip3 install --user -r requirements.txt'
+  \   }
+  \ }
 
 " Motions
 NeoBundle 'easymotion/vim-easymotion'
