@@ -10,5 +10,6 @@ augroup END
 augroup filetype_personal_styles
   autocmd FileType json set conceallevel=0 " Still need to see quotes
   autocmd FileType markdown set tw=80
+  autocmd FileType javascript.jsx set tw=0
   " autocmd FileType *.jsx let b:match_words='(:),\[:\],{:},<:>,<\@<=\([^/][^ \t>]*\)[^>]*\%(\%(=\|/\)\@<!>\|$\):<\@<=/\1>'
 augroup END
