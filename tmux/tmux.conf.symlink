@@ -11,7 +11,8 @@ source ~/src/powerline/powerline/bindings/tmux/powerline.conf
 # set-option -g status-utf8 on
 
 # Report that we can handle 256 colors
-set -g default-terminal "screen-256color"
+# set -g default-terminal "screen-256color"
+set -g default-terminal "tmux-256color"
 
 set-window-option -g xterm-keys on
 
