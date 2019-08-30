@@ -31,6 +31,7 @@ NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'chrisbra/NrrwRgn'
 NeoBundle 'junegunn/limelight.vim'
 NeoBundle 'metakirby5/codi.vim'
+NeoBundle 'bogado/file-line'       " Ability to open files to a specific line:col
 NeoBundle 'Chiel92/vim-autoformat' " Will be painful until 3x tsserver issue is fixed
 NeoBundle 'kshenoy/vim-signature'  " Shows marks in guttter
 NeoBundle 'mhinz/vim-signify'      " Shows git diff info in gutter
@@ -67,6 +68,7 @@ NeoBundle 'gregsexton/gitv'
 
 " So many tpope goodies!
 NeoBundle 'tpope/vim-abolish'
+NeoBundle 'tpope/vim-apathy'
 NeoBundle 'tpope/vim-bundler'
 NeoBundle 'tpope/vim-characterize'
 NeoBundle 'tpope/vim-dadbod'
