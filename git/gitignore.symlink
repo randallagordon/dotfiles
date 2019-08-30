@@ -1,3 +1,7 @@
+# Did you know‽ Project-specific ignores can be put in `.git/info/exclude`
+# and they won't be checked into the repo!
+# Check why a file is ignored using `git check-ignore -v ignored.file`
+
 .DS_Store
 .svn
 *~
