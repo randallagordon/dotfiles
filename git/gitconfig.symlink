@@ -21,8 +21,10 @@
   ignore = !git update-index --assume-unchanged
   unignore = !git update-index --no-assume-unchanged
   ignored = !git ls-files -v | grep ^[a-z]
+  wip = commit --no-verify -m "WIP"
   cnv = commit --no-verify
   anv = commit --amend --no-verify
+  cup = commit --amend --no-verify --no-edit
   anvne = commit --amend --no-verify --no-edit
   names = show --name-only
 
