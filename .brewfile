@@ -1,44 +1,48 @@
 brew tap caskroom/cask
 brew tap homebrew/services
-brew install zsh
-brew install vim
-brew install ctags
-brew install cmake
-brew install node
-brew install python
-brew install elasticsearch
-brew install postgres
-brew install httpie
-brew install tmux
-brew install flux
-brew install diff-so-fancy
-brew install the_silver_searcher
-brew install exa
-brew install ios-webkit-debug-proxy
-brew install fd
-brew install bat
-brew install weechat --with-perl --with-python
-brew cask install google-chrome
-brew cask install dropbox
+
+brew install zsh tmux
+brew install git hub diff-so-fancy
+brew install node python ruby
+brew install vim ctags cmake
+# ruby required for command-t
+# cmake required for YouCompleteMe
+brew install the_silver_searcher exa fd bat
+
+# brew install weechat --with-perl --with-python
+# brew install elasticsearch
+# brew install postgres
+# brew install httpie
+# brew install ios-webkit-debug-proxy
+
 brew cask install iterm2
-brew cask install atom
-brew cask install docker-toolbox
-brew cask install screenhero
-brew cask install postico
-brew cask install sketch
-brew cask install karabiner
-brew cask install bartender
-brew cask install flux
-brew cask install caffeine
-brew cask install numi
-brew cask install evernote
-brew cask install spectacle
-brew cask install ngrok
-brew cask install noizio
-brew cask install cumulus
-brew cask install soundcleod
-brew cask install spotify
+
+brew cask install google-chrome 
+brew cask install homebrew/cask-versions/google-chrome-canary 
+brew cask install dropbox 
+brew cask install istat-menus 
 brew cask install the-unarchiver
-brew cask install virtualbox
-brew cask install virtualbox-extension-pack
-brew cask install keycastr
+
+brew cask install figma 
+brew cask install visual-studio-code 
+brew cask install docker 
+brew cask install virtualbox 
+brew cask install virtualbox-extension-pack 
+brew cask install keycastr 
+brew cask install ngrok 
+brew cask install postico 
+brew cask install db-browser-for-sqlite
+
+brew cask install bartender
+brew cask install spectacle
+brew cask install notion
+brew cask install numi
+brew cask install karabiner-elements
+
+brew cask install spotify  
+brew cask install soundcleod 
+brew cask install cumulus
+brew cask install homebrew/cask-drivers/sonos
+
+# brew cask install flux
+# brew cask install sketch
