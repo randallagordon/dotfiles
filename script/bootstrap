@@ -134,8 +134,16 @@ ln -s ~/.dotfiles/powerline-config ~/.config/powerline
 # Byobu
 ln -s ~/.dotfiles/byobu ~/.byobu
 
+# Vim
+ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
+ln -s ~/.dotfiles/vim/ ~/.vim
+cd ~/.vim && git submodule init && git submodule update
+
 # Install Tmux Plugin Manager
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+if ! [ -f ~/.tmux/plugins/tpm ]
+then
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
 
 echo ''
 echo '  All installed!'

@@ -11,7 +11,7 @@ NeoBundle 'w0rp/ale' " Better than Syntastic?
 NeoBundle 'wincent/command-t', {
   \   'build_commands': ['make', 'ruby'],
   \   'build': {
-  \      'mac': 'cd ruby/command-t/ext/command-t && { make clean; /usr/local/Cellar/ruby/2.6.3/bin/ruby extconf.rb && make }'
+  \      'mac': 'cd ruby/command-t/ext/command-t && { make clean; /usr/local/opt/ruby/bin/ruby extconf.rb && make }'
   \   }
   \ }
 " " Possibly related to weirdness with completion? (jj not escaping):
