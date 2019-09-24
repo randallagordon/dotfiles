@@ -5,6 +5,7 @@ augroup similar_filetype_mappings
   " autocmd BufNewFile,BufRead *.md setfiletype markdown
   autocmd BufNewFile,BufRead ~/.localrc setfiletype zsh
   autocmd BufNewFile,BufRead *.rss setfiletype xml
+  autocmd BufNewFile,BufRead *.snippet setfiletype snippets
 augroup END
 
 augroup filetype_personal_styles

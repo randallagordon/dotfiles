@@ -106,6 +106,8 @@ NeoBundle 'moll/vim-node'
 " To consider:
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" https://github.com/christoomey/vim-conflicted " Builds on fugitive
+
 " Google Maktaba/Glaive ecosystem
 " NeoBundle 'google/vim-maktaba'
 " NeoBundle 'google/vim-glaive'
