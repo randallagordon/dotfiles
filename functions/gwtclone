@@ -1,0 +1,18 @@
+function gwtclone() {
+  local repo=$1
+  local directory=$(basename $repo)
+  echo 'repo' $repo
+  echo 'dir' $directory
+  mkdir $directory && cd $directory
+  git clone git@github.com:$1.git master && cd master
+  git worktree add ../work && \
+    cd ../work && \
+    git checkout $(git rev-parse origin/master) && \
+    git branch -d work && \
+    cd ../master
+  git worktree add ../review && \
+    cd ../review && \
+    git checkout $(git rev-parse origin/master) && \
+    git branch -d review && \
+    cd ../work
+}
