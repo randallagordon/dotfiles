@@ -145,6 +145,15 @@ then
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 fi
 
+# If on macos, we need psutil for the uptime tmux segment:
+sudo easy_install psutil
+
+mkdir ~/Projects
+mkdir ~/Sandbox
+mkdir ~/src
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+
 echo ''
 echo '  All installed!'
 echo ''

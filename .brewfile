@@ -3,11 +3,11 @@ brew tap homebrew/services
 
 brew install zsh tmux
 brew install git hub diff-so-fancy
-brew install node python ruby
+brew install node java python ruby
 brew install vim ctags cmake
 # ruby required for command-t
 # cmake required for YouCompleteMe
-brew install the_silver_searcher exa fd bat
+brew install the_silver_searcher exa fd bat wget jq
 
 # brew install weechat --with-perl --with-python
 # brew install elasticsearch
@@ -37,6 +37,7 @@ brew cask install bartender
 brew cask install spectacle
 brew cask install notion
 brew cask install numi
+brew cask install rocket
 brew cask install karabiner-elements
 
 brew cask install spotify  
