@@ -7,7 +7,7 @@ brew install node java python ruby
 brew install vim ctags cmake
 # ruby required for command-t
 # cmake required for YouCompleteMe
-brew install the_silver_searcher exa fd bat wget jq
+brew install the_silver_searcher exa fd bat wget jq tree
 
 # brew install weechat --with-perl --with-python
 # brew install elasticsearch
