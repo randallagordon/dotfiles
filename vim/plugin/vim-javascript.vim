@@ -16,5 +16,7 @@ let g:javascript_conceal_underscore_arrow_function = "□"
 " Conceal semicolons—because, yuck!
 augroup conceal_semicolons
   autocmd FileType javascript,typescript,*.jsx syntax match Normal ';' conceal cchar= 
-  autocmd FileType javascript,typescript,*.jsx syntax match jsNoise ';' conceal cchar= 
+  autocmd FileType javascript,typescript,typescript.tsx,*.jsx syntax match jsNoise ';' conceal cchar= 
+  autocmd FileType typescript,typescript.tsx syntax match typescriptEndColons ';' conceal cchar= 
+  autocmd FileType typescript,typescript.tsx syntax match typescriptBlock ';' conceal cchar= 
 augroup END
