@@ -127,6 +127,9 @@ then
   else
     fail "error installing dependencies"
   fi
+
+  # Reclaim the Ctrl+Cmd+D hotkey from macOS's "define" feature
+  defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 70 '<dict><key>enabled</key><false/></dict>'
 fi
 
 # Powerline Stuff
