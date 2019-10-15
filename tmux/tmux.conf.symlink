@@ -28,7 +28,12 @@ bind C-q send-prefix
 set -g default-command /bin/zsh
 set -g default-shell /bin/zsh
 
+# Move around and copy text like we're in vim
 setw -g mode-keys vi
+bind-key -T copy-mode-vi 'v' send -X begin-selection     # Begin selection in copy mode.
+bind-key -T copy-mode-vi 'C-v' send -X rectangle-toggle  # Begin selection in copy mode.
+bind-key -T copy-mode-vi 'y' send -X copy-selection      # Yank selection in copy mode.
+unbind-key -T copy-mode-vi v                             # Necessary or C-v won't work
 
 # split windows like vim
 # vim's definition of a horizontal/vertical split is reversed from tmux's
@@ -67,9 +72,6 @@ set-option -g mouse on
 # run-shell ~/.dotfiles/tmux/scroll_copy_mode.tmux
 bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'select-pane -t=; copy-mode -e; send-keys -M'"
 bind -n WheelDownPane select-pane -t= \; send-keys -M
-
-# Bind 'y' to "yank" selected text in paste-buffer mode
-bind-key -T copy-mode-vi y send-keys -X copy-selection
 
 # Toggle sending keystrokes to all panes in a window
 #bind-key a set-window-option synchronize-panes
