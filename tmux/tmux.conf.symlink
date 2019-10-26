@@ -23,7 +23,6 @@ set-option -s escape-time 10
 #unbind C-b
 # ...actually, just bind Q as an extra escape for now
 set -g prefix C-q
-bind C-q send-prefix
 
 set -g default-command /bin/zsh
 set -g default-shell /bin/zsh
@@ -66,6 +65,8 @@ setw -g pane-base-index 1
 
 # Using `q` to display pane #s disappears too quickly!
 set display-panes-time 3000
+# And allow hitting q twice fast wihout lifting off ctrl
+bind C-q display-panes
 
 # Just click it
 set-option -g mouse on
