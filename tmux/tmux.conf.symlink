@@ -64,7 +64,7 @@ set -g base-index 1
 setw -g pane-base-index 1
 
 # Using `q` to display pane #s disappears too quickly!
-set display-panes-time 3000
+set display-panes-time 4000
 # And allow hitting q twice fast wihout lifting off ctrl
 bind C-q display-panes
 
