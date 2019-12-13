@@ -48,9 +48,8 @@ nnoremap <Leader>yy "*yy                     " In normal mode, yank entire line
 " Find word under cursor in files, recursing from current directory down
 map <leader>f :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
 
-" Open file under cursor in new tab - Already mapped to <c-w>gf, commenting
-" out for now since the original gf to open in the current buffer is useful
-"map gf :tabnew <cfile><CR>
+" Easier new tabs...
+nnoremap <Leader>tn :tabnew<CR>
 
 " Make <c-u> play nice with undo
 inoremap <c-u> <c-g>u<c-u>
