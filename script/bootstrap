@@ -151,6 +151,11 @@ fi
 # If on macos, we need psutil for the uptime tmux segment:
 sudo easy_install psutil
 
+# VSCode
+ln -s ~/.dotfiles/vscode/settings.json ~/Library/ApplicationSupport/Code/User/settings.json
+ln -s ~/.dotfiles/vscode/keybindings.json ~/Library/ApplicationSupport/Code/User/keybindings.json
+ln -s ~/.dotfiles/vscode/snippets/ ~/Library/ApplicationSupport/Code/User
+
 mkdir ~/Projects
 mkdir ~/Sandbox
 mkdir ~/src

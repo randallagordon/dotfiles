@@ -1,0 +1,150 @@
+{
+  "breadcrumbs.enabled": true,
+  "editor.detectIndentation": false,
+  "editor.fontFamily": "'FiraCode-Retina', 'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.lineNumbers": "relative",
+  // "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+  "emmet.syntaxProfiles": {
+    "postcss": "css"
+  },
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "settings.cycle": [
+    {
+      "id": "lineNumber",
+      "overrideWorkspaceSettings": false,
+      "values": [
+        {
+          "editor.lineNumbers": "on"
+        },
+        {
+          "editor.lineNumbers": "relative"
+        }
+      ]
+    }
+  ],
+  "telemetry.enableTelemetry": false,
+  // Vim settings
+  "vim.camelCaseMotion.enable": true,
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ],
+      "commands": [
+        {
+          "command": "settings.cycle.lineNumber"
+        }
+      ]
+    },
+  ],
+  "vim.normalModeKeyBindings": [],
+  "vim.leader": ",",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        ";"
+      ],
+      "after": [
+        ":"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "k"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.moveLinesUpAction"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "j"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.moveLinesDownAction"
+        }
+      ]
+    },
+    // will-wow.vscode-alternate-file
+    {
+      "before": [
+        "<leader>",
+        "a",
+        "a"
+      ],
+      "commands": [
+        {
+          "command": "alternate.alternateFile"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a",
+        "v"
+      ],
+      "commands": [
+        {
+          "command": "alternate.alternateFileInSplit"
+        }
+      ]
+    },
+    // vim-vinegar
+    {
+      "before": [
+        "-"
+      ],
+      "commands": [
+        {
+          "command": "breadcrumbs.toggleToOn",
+          "when": "!config.breadcrumbs.enabled",
+        },
+        {
+          "command": "breadcrumbs.focusAndSelect",
+          "when": "breadcrumbsPossible",
+        },
+      ],
+    },
+  ],
+  "vsicons.associations.files": [
+    {
+      "icon": "postcss",
+      "extensions": ["scss", "index.scss"],
+      "format": "svg"
+    },
+  ],
+  "window.zoomLevel": 1,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Monokai",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.minimap.enabled": false,
+}
