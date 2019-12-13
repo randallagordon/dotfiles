@@ -82,15 +82,19 @@ snippet gett
 snippet v
 	var ${1:name} = ${2:value}
 # Console Log
-snippet cl
-	console.log(${1})
 snippet cd
 	console.dir(${1}, { depth: null, colors: true })
 snippet clv
 	console.log('${1}', $1)
+snippet yolo
+	console.log('yolo${1}')
 snippet clg
 	console.group()
 snippet clge
 	console.groupEnd()
 snippet esld
-	/* eslint-disable no-undef, space-before-function-paren */
+	/* eslint-disable ${1} */
+snippet esldl
+	// eslint-disable-line ${1}
+snippet esldnl
+	/* eslint-disable-next-line ${1} */
