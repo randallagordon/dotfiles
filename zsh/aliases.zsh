@@ -15,6 +15,7 @@ alias sagi="sudo apt-get install"
 #alias pbpaste='xclip -selection clipboard -o'
 alias pbc=pbcopy
 alias pbp=pbpaste
+alias tp="tee >(pbcopy)"
 
 alias ni="node-inspector"
 alias ni8043="node-inspector --web-port=8043"
