@@ -40,8 +40,8 @@ alias grbm='git remote update && git checkout $(git rev-parse origin/master)' # 
 alias gcon='git diff --name-only --diff-filter=U' # 'git conflicts'
 alias grmdeleted="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 
-# Create `g1` through `g10` for quick `git log -#`ing
-for i in {1..10}; do alias g$i="glog -$i"; done
+# Create `g1` through `g40` for quick `git log -#`ing, because lazy
+for i in {1..40}; do alias g$i="glog -$i"; done
 
 alias prme='cat ~/pr-template.md | pbcopy'
 
