@@ -10,5 +10,5 @@ let g:formatters_javascript = ['prettier']
 " Autoformat on write
 au BufWrite * :Autoformat
 
-autocmd FileType snippets,terraform,vim,yaml,zsh let b:autoformat_autoindent=0
+autocmd FileType snippets,terraform,vim,yaml,sh,zsh let b:autoformat_autoindent=0
 autocmd FileType vim let g:autoformat_remove_trailing_spaces = 0
