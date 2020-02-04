@@ -2,6 +2,7 @@ brew tap homebrew/services
 
 brew install zsh tmux
 brew install git hub diff-so-fancy
+brew install github/gh/gh
 brew install node python ruby
 brew cask install java
 brew install vim ctags cmake
