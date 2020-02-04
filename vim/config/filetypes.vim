@@ -14,3 +14,12 @@ augroup filetype_personal_styles
   autocmd FileType javascript.jsx set tw=0
   " autocmd FileType *.jsx let b:match_words='(:),\[:\],{:},<:>,<\@<=\([^/][^ \t>]*\)[^>]*\%(\%(=\|/\)\@<!>\|$\):<\@<=/\1>'
 augroup END
+
+augroup reset_javascript_filetypes
+  " In Vim 8.2 filetypes are improved—but I'm not on 8.2 yet and neither are my plugins!
+  au!
+  autocmd BufNewFile,BufRead *.tsx set filetype=typescript
+  autocmd BufNewFile,BufRead *.tsx set syntax=typescriptreact
+  autocmd BufNewFile,BufRead *.ts  set filetype=typescript
+  autocmd BufNewFile,BufRead *.ts  set syntax=javascript
+augroup END
