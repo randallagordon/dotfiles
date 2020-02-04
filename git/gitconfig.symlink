@@ -27,6 +27,8 @@
   cup = commit --amend --no-verify --no-edit
   anvne = commit --amend --no-verify --no-edit
   names = show --name-only
+  fetch-pr  = "!f() { git fetch origin refs/pull/$1/head:pr/$1; } ; f"
+  delete-prs = "!git for-each-ref refs/heads/pr/* --format='%(refname)' | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done"
 
 [color]
   diff = auto
