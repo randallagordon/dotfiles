@@ -12,6 +12,8 @@ j() {
     jira o $(git rev-parse --abbrev-ref HEAD)
   elif [[ $# -eq 1 && $1 == "t" ]]; then
     jira i $(git rev-parse --abbrev-ref HEAD) | head -2 | tail -1 | cut -d' ' -f 9- | rev | cut -d' ' -f2- | rev | xargs -0 echo -n
+  elif [[ $# -eq 1 && $1 == "tc" ]]; then
+    jira i $(git rev-parse --abbrev-ref HEAD) | head -2 | tail -1 | cut -d' ' -f 9- | rev | cut -d' ' -f2- | rev | xargs -0 echo -n | pbcopy
   else
     jira $@
   fi
