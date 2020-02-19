@@ -10,12 +10,16 @@ j() {
     jira i "$KEY"-"$2" ${@:2}
   elif [[ $# -eq 1 && $1 == "o" ]]; then
     jira o $(git rev-parse --abbrev-ref HEAD)
+  elif [[ $1 == "o" && $2 =~ $NUMBERREGEX ]]; then
+    jira o "$KEY"-"$2" ${@:2}
   elif [[ $# -eq 1 && $1 == "t" ]]; then
     jira i $(git rev-parse --abbrev-ref HEAD) | head -2 | tail -1 | cut -d' ' -f 9- | rev | cut -d' ' -f2- | rev | xargs -0 echo -n
   elif [[ $# -eq 1 && $1 == "tc" ]]; then
     jira i $(git rev-parse --abbrev-ref HEAD) | head -2 | tail -1 | cut -d' ' -f 9- | rev | cut -d' ' -f2- | rev | xargs -0 echo -n | pbcopy
   elif [[ $1 = "a" ]]; then
     jira i $(git rev-parse --abbrev-ref HEAD) -a randall
+  elif [[ $1 == "a" && $2 =~ $NUMBERREGEX ]]; then
+    jira i "$KEY"-"$2" ${@:2} -a randall
   else
     jira $@
   fi
