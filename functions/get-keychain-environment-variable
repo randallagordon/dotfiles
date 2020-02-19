@@ -1,0 +1,6 @@
+# Adapted from: https://gist.github.com/bmhatfield/f613c10e360b4f27033761bbee4404fd
+
+# Use: keychain-environment-variable SECRET_ENV_VAR
+function get-keychain-environment-variable () {
+    security find-generic-password -w -a ${USER} -D "environment variable" -s "${1}"
+}
