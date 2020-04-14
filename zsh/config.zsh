@@ -79,8 +79,10 @@ bindkey '^e' end-of-line
 # History
 bindkey '^p' up-history
 bindkey '^n' down-history
-bindkey '^r' history-incremental-search-backward
-bindkey '^f' history-incremental-search-forward
+# Search using patterns as documented here:
+# http://zsh.sourceforge.net/Doc/Release/Expansion.html#Filename-Generation
+bindkey '^r' history-incremental-pattern-search-backward
+bindkey '^f' history-incremental-pattern-search-forward
 
 # Kill/yank
 bindkey '^?' backward-delete-char
