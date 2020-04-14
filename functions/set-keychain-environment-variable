@@ -2,11 +2,16 @@
 
 # Use: set-keychain-environment-variable SECRET_ENV_VAR
 #   provide: super_secret_key_abc123
+# Or in scripts use: set-keychain-environment-variable SECRET_ENV_VAR super_secret_key_abc123
 function set-keychain-environment-variable () {
   [ -n "$1" ] || print "Missing environment variable name"
 
-  # Note: if using bash, use `-p` to indicate a prompt string, rather than the leading `?`
-  read -s "?Enter Value for ${1}: " secret
+  if [ -n "$2" ]; then
+    secret=$2
+  else
+    # Note: if using bash, use `-p` to indicate a prompt string, rather than the leading `?`
+    read -s "?Enter Value for ${1}: " secret
+  fi
 
   ( [ -n "$1" ] && [ -n "$secret" ] ) || return 1
   security add-generic-password -U -a ${USER} -D "environment variable" -s "${1}" -w "${secret}"
