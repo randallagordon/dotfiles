@@ -62,6 +62,7 @@ NeoBundle 'tmhedberg/indent-motion' " maps <Leader>[ and <Leader>] to jump to be
 " Transformations
 NeoBundle 'AndrewRadev/splitjoin.vim'
 NeoBundle 'mvolkmann/vim-js-arrow-function'
+NeoBundle 'jiangmiao/auto-pairs'
 
 " Tools
 NeoBundle 'gregsexton/gitv'
