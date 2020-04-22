@@ -25,6 +25,7 @@ brew cask install homebrew/cask-versions/google-chrome-canary
 brew cask install dropbox 
 brew cask install istat-menus 
 brew cask install the-unarchiver
+brew cask install signal
 
 brew cask install figma 
 brew cask install hex-fiend
