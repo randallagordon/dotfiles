@@ -10,6 +10,7 @@ brew install vim ctags cmake
 # cmake required for YouCompleteMe
 brew install the_silver_searcher exa fd bat wget jq tree
 brew install awscli
+brew install tfenv
 
 # brew install weechat --with-perl --with-python
 # brew install elasticsearch
