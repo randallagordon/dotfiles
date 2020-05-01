@@ -20,6 +20,8 @@ j() {
     jira i $(git rev-parse --abbrev-ref HEAD) -a randall
   elif [[ $1 == "a" && $2 =~ $NUMBERREGEX ]]; then
     jira i "$KEY"-"$2" ${@:2} -a randall
+  elif [[ $1 == "t" && $2 =~ $NUMBERREGEX ]]; then
+    jira i "$KEY"-"$2" -- transition
   else
     jira $@
   fi
