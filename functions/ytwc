@@ -1,0 +1,4 @@
+ytwc() {
+  coverageGlob="**/$(echo $1 | cut -d/ -f2- | rev | cut -d/ -f2- | rev)/**/*.{js,jsx,ts,tsx}"
+  yarn test --watch --coverage --collectCoverageFrom="$coverageGlob" $1
+}

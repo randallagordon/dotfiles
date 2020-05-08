@@ -1,0 +1,4 @@
+ntwc() {
+  coverageGlob="**/$(echo $1 | cut -d/ -f2- | rev | cut -d/ -f2- | rev)/**/*.{js,jsx,ts,tsx}"
+  npm -s run test -- --watch --coverage --collectCoverageFrom="$coverageGlob" $1
+}
