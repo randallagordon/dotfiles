@@ -1,0 +1,49 @@
+snippet spi "story prop imports"
+import {
+  getStoryProps,
+  Story,
+  StoryPropOptions,
+} from '../../../.storybook/lib';
+endsnippet
+
+snippet iwap "import withApolloProvider"
+import { withApolloProvider } from '../../../.storybook/decorators/withApolloProvider';
+endsnippet
+
+snippet iwfm "import withFetchMock"
+import { withFetchMock } from '../../../.storybook/decorators/withFetchMock';
+endsnippet
+
+snippet iwfm "import withIntl"
+import { withIntl } from '../../../.storybook/decorators/withIntl';
+endsnippet
+
+snippet iwr "import withRouter"
+import { withRouter } from '../../../.storybook/decorators/withRouter';
+endsnippet
+
+snippet iws "import withStore"
+import { withStore } from '../../../.storybook/decorators/withStore';
+endsnippet
+
+snippet sp "story prop"
+${1:propName}: \{ initialValue: ${2:value}${3:, knobType: '${4:boolean}'} },
+endsnippet
+
+snippet spkn "story prop (with knobName)"
+${1:propName}: \{ initialValue: ${2:value}${3:, knobType: '${4:boolean}'}${5:, knobName: '${6:overrideName}'} },
+endsnippet
+
+snippet spd "storyPropDefaults"
+const storyPropDefaults: StoryPropOptions<${1:ComponentName}Props> = {
+	${2:propName}: \{ initialValue: ${3:value}${4:, knobType: '${5:boolean}'} },
+};
+endsnippet
+
+snippet gsp "getStoryProps"
+const storyProps = getStoryProps(storyPropDefaults, overrides);
+endsnippet
+
+snippet sps "storyProps spread"
+{...storyProps}
+endsnippet
