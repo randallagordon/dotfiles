@@ -27,6 +27,7 @@ set conceallevel=1                           " 🙈
 set backspace=indent,eol,start               " Make backspace work...
 set ts=2 sts=2 sw=2 expandtab                " 🚫 tabs!
 set formatoptions+=r                         " Keep comments commenting...
+set shortmess-=S                             " DO show search count e.g. [1/5]
 
 "set t_BE=                                    " Turn off bracketed paste (for command-t)
 
