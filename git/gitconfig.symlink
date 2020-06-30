@@ -7,6 +7,8 @@
 
 [alias]
   co = checkout
+  coo = checkout --ours
+  cot = checkout --theirs
   ci = commit
   st = status
   br = branch
