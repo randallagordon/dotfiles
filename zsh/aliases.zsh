@@ -41,3 +41,5 @@ alias canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Ch
 alias canary-headless="canary --remote-debugging-port=9222 --disable-gpu --headless"
 
 alias tf="terraform"
+
+alias colorverternpx="npx ~/Projects/colorverter"

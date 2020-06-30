@@ -105,3 +105,7 @@ augroup quickfix_close
     \   bd|
     \   q | endif
 augroup END
+
+" Execute commands by passing the visual selection as args
+vnoremap <leader>ec y:! <C-r>0<Home><right>
+vnoremap <leader>cv y:!npx ~/Projects/colorverter \\<C-r>0 \| tee >(pbcopy)<Home><right>
