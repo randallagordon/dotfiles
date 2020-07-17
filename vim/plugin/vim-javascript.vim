@@ -14,10 +14,14 @@ let g:javascript_conceal_underscore_arrow_function = "□"
 " let g:javascript_conceal_arrow_function       = "⇒"
 
 " Conceal semicolons—because, yuck!
+fun s:conceal_semicolons()
+  syntax match Normal ';' conceal cchar= 
+  syntax match jsNoise ';' conceal cchar= 
+  syntax match typescriptEndColons ';' conceal cchar= 
+  syntax match typescriptBlock ';' conceal cchar= 
+endfun
+
 augroup conceal_semicolons
   au!
-  autocmd FileType javascript,typescript,*.jsx syntax match Normal ';' conceal cchar= 
-  autocmd FileType javascript,typescript,typescript.tsx,*.jsx syntax match jsNoise ';' conceal cchar= 
-  autocmd FileType typescript,typescript.tsx syntax match typescriptEndColons ';' conceal cchar= 
-  autocmd FileType typescript,typescript.tsx syntax match typescriptBlock ';' conceal cchar= 
+  autocmd Syntax javascript,typescript,typescript.tsx call s:conceal_semicolons()
 augroup END
