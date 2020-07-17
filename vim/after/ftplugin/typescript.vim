@@ -1,0 +1,10 @@
+let b:match_words = ''
+                \ . '(:),\[:\],{:},<:>,'
+                \ . '<\@<=\([^/][^ \t>]*\)[^>]*\%(>\|$\):<\@<=/\1>,'
+                \ . '\<function\>:\<return\>,'
+                \ . '\<do\>:\<while\>,'
+                \ . '\<switch\>:\<case\>:\<default\>,'
+                \ . '\<if\>:\<else\>,'
+                \ . '\<try\>:\<catch\>,'
+                \ . '\<try\>:\<catch\>:\<finally\>,'
+                \ . '`$:^`,' " Template tags

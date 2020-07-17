@@ -59,10 +59,12 @@ NeoBundle 'bkad/CamelCaseMotion'
 NeoBundle 'adelarsq/vim-matchit'
 NeoBundle 'tmhedberg/indent-motion' " maps <Leader>[ and <Leader>] to jump to beg/end of a block
 
-" Transformations
+" Transformations/Objects/Targets
 NeoBundle 'AndrewRadev/splitjoin.vim'
 NeoBundle 'mvolkmann/vim-js-arrow-function'
 NeoBundle 'jiangmiao/auto-pairs'
+NeoBundle 'kana/vim-textobj-user'
+NeoBundle 'fvictorio/vim-textobj-backticks' " For a` and i`
 
 " Tools
 NeoBundle 'gregsexton/gitv'
