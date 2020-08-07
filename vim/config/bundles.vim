@@ -23,7 +23,7 @@ NeoBundle 'Valloric/YouCompleteMe', {
   \   }
   \ }
 NeoBundle 'SirVer/ultisnips'
-NeoBundle 'honza/vim-snippets'
+"NeoBundle 'honza/vim-snippets'     " Disabled as it pollutes my own snippets
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'junegunn/rainbow_parentheses.vim'

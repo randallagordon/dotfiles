@@ -1,0 +1,39 @@
+# Partially sourced and modified from https://github.com/honza/vim-snippets
+
+priority -50
+
+snippet desc "Describe (jest)" b
+describe('${1:description}', () => {
+	$0
+});
+endsnippet
+
+snippet it "it (jest)" b
+it('${1:description}', () => {
+	$0
+});
+endsnippet
+
+snippet bef "before each (jest)" b
+beforeEach(() => {
+	$0
+});
+endsnippet
+
+snippet aft "after each (jest)" b
+afterEach(() => {
+	$0
+});
+endsnippet
+
+snippet befa "before all (jest)" b
+beforeAll(() => {
+	$0
+});
+endsnippet
+
+snippet afta "after all (jest)" b
+afterAll(() => {
+	$0
+});
+endsnippet
