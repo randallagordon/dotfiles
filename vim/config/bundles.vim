@@ -58,6 +58,7 @@ NeoBundle 'easymotion/vim-easymotion'
 NeoBundle 'bkad/CamelCaseMotion'
 NeoBundle 'adelarsq/vim-matchit'
 NeoBundle 'tmhedberg/indent-motion' " maps <Leader>[ and <Leader>] to jump to beg/end of a block
+NeoBundle 'mg979/vim-visual-multi'
 
 " Transformations/Objects/Targets
 NeoBundle 'AndrewRadev/splitjoin.vim'
@@ -98,6 +99,7 @@ NeoBundle 'tpope/vim-vinegar'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 NeoBundle 'sheerun/vim-polyglot' " Start with a great baseline
+                                 " working SHA: 4f3df59be709bf0d5c5c67dc804fde49abdc2700
 
 " JavaScript/Node/TypeScript
 NeoBundle 'Quramy/tsuquyomi'
