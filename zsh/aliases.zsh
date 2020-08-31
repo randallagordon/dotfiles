@@ -30,6 +30,8 @@ alias ccat="pygmentize -O style=monokai -f console256 -g"
 # Use the mosh mouse fix
 alias mosh="moshm"
 
+alias k9="kill -9"
+
 # Better ag output via less
 alias ag='\ag --pager="less -XFR"'
 
