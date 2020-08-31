@@ -1,1 +1,16 @@
 extends javascript
+
+snippet	et "export type"
+export type ${1:TypeName} = ${2}
+endsnippet
+
+snippet	eto "export type (Object)"
+export type ${1:TypeName} = {
+	${2:property}: ${3:type}
+}
+endsnippet
+
+snippet	etu "export type (Union)"
+export type ${1:TypeName} =
+	| ${2:member}
+endsnippet
