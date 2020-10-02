@@ -26,6 +26,10 @@ snippet iws "import withStore"
 import { withStore } from '../../../.storybook/decorators/withStore';
 endsnippet
 
+snippet iwt "import withTimemachine"
+import { withTimemachine } from '../../../.storybook/decorators/withTimemachine';
+endsnippet
+
 snippet sp "story prop"
 ${1:propName}: \{ initialValue: ${2:value}${3:, knobType: '${4:boolean}'} },
 endsnippet
@@ -46,4 +50,21 @@ endsnippet
 
 snippet sps "storyProps spread"
 {...storyProps}
+endsnippet
+
+snippet	sbs "Barebones Storybook Story"
+import * as React from 'react';
+
+import { Story } from '../../../../.storybook/lib';
+
+import { ComponentName } from './';
+
+export default {
+  component: ComponentName,
+  title: 'Features|OptionalSection/ComponentName',
+};
+
+export const Playground: Story = () => {
+  return <ComponentName />;
+};
 endsnippet
