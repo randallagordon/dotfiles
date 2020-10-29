@@ -129,6 +129,14 @@ snippet clge
 console.groupEnd()
 endsnippet
 
+snippet pp
+console.log(JSON.stringify(${1}, null, 2))
+endsnippet
+
+snippet ppc
+console.log(util.formatWithOptions({ colors: true }, '%O', ${1}))
+endsnippet
+
 snippet esld
 /* eslint-disable ${1} */
 endsnippet
