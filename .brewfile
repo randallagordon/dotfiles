@@ -2,11 +2,13 @@ brew tap homebrew/services
 
 brew install zsh tmux
 brew install git hub diff-so-fancy git-recent
-brew install github/gh/gh
-brew cask install github
+brew install gh
+brew install --cask  github
 brew install node python ruby
-brew cask install java
+brew install java
+# brew install jabba
 brew install vim ctags cmake
+# brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 # ruby required for command-t
 # cmake required for YouCompleteMe
 brew install the_silver_searcher exa fd bat wget jq tree
@@ -19,39 +21,39 @@ brew install tfenv
 # brew install httpie
 # brew install ios-webkit-debug-proxy
 
-brew cask install iterm2
+brew install --cask  iterm2
 
-brew cask install google-chrome 
-brew cask install homebrew/cask-versions/google-chrome-canary 
-brew cask install dropbox 
-brew cask install istat-menus 
-brew cask install the-unarchiver
-brew cask install signal
+brew install --cask  google-chrome 
+brew install --cask  homebrew/cask-versions/google-chrome-canary 
+brew install --cask  dropbox 
+brew install --cask  istat-menus 
+brew install --cask  the-unarchiver
+brew install --cask  signal
 
-brew cask install figma 
-brew cask install hex-fiend
-brew cask install visual-studio-code 
-brew cask install docker 
-brew cask install virtualbox 
-brew cask install virtualbox-extension-pack 
-brew cask install keycastr 
-brew cask install ngrok 
-brew cask install postico 
-brew cask install postman
-brew cask install db-browser-for-sqlite
+brew install --cask  figma 
+brew install --cask  hex-fiend
+brew install --cask  visual-studio-code 
+brew install --cask  docker 
+brew install --cask  virtualbox 
+brew install --cask  virtualbox-extension-pack 
+brew install --cask  keycastr 
+brew install --cask  ngrok 
+brew install --cask  postico 
+brew install --cask  postman
+brew install --cask  db-browser-for-sqlite
 
-brew cask install bartender
-brew cask install spectacle
-brew cask install notion
-brew cask install numi
-brew cask install rocket
-brew cask install karabiner-elements
+brew install --cask  bartender
+brew install --cask  spectacle
+brew install --cask  notion
+brew install --cask  numi
+brew install --cask  rocket
+brew install --cask  karabiner-elements
 
-brew cask install soundsource
-brew cask install spotify  
-brew cask install soundcleod 
-brew cask install cumulus
-brew cask install homebrew/cask-drivers/sonos
+brew install --cask  soundsource
+brew install --cask  spotify  
+brew install --cask  soundcleod 
+brew install --cask  cumulus
+brew install --cask  homebrew/cask-drivers/sonos
 
-# brew cask install flux
-# brew cask install sketch
+# brew install --cask  flux
+# brew install --cask  sketch
