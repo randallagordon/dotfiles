@@ -52,6 +52,14 @@
 [difftool]
   prompt = false
 
+[diff "minjs"]
+  textconv = js-beautify
+  cachetextconv = true
+
+[diff "mincss"]
+  textconv = js-beautify --css
+  cachetextconv = true
+
 [push]
   default = simple
 
