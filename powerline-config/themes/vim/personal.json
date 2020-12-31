@@ -35,8 +35,7 @@
 				"priority": 20
 			},
 			{
-				"function": "file_directory",
-				"priority": 40,
+				"function": "localvim.file_directory",
 				"draw_soft_divider": false
 			},
 			{

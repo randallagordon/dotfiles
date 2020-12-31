@@ -265,6 +265,13 @@ def file_directory(pl, segment_info, remove_scheme=True, shorten_user=True,
     :param bool shorten_home:
         Shorten all directories in :file:`/home/` to :file:`~user/` instead of 
         :file:`/home/user/`. Does not work for files with scheme present.
+
+    :param int max_depth:
+        Truncates the number of directories shown to max_depth,if :file: is
+        more than max_depth deep from the cwd
+
+    :param string ellipsis:
+        Character to use with max_depth truncation
     '''
     name = buffer_name(segment_info)
     if not name:
