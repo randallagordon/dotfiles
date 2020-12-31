@@ -21,7 +21,7 @@ NeoBundle 'Valloric/YouCompleteMe', {
   \   'build': {
   \      'mac': 'python3 install.py --ts-completer --clang-completer && rm -r third_party/ycmd/third_party/tsserver'
   \   }
-  \ }
+  \ } " working SHA: 21f1cc572832d2b2dda109208ba4191494523049
 NeoBundle 'SirVer/ultisnips'
 "NeoBundle 'honza/vim-snippets'     " Disabled as it pollutes my own snippets
 NeoBundle 'mattn/emmet-vim'
@@ -52,13 +52,14 @@ NeoBundle 'paulkass/jira-vim', {
   \      'mac': 'pip3 install --user -r requirements.txt'
   \   }
   \ }
+NeoBundle 'DanilaMihailov/beacon.nvim'
 
 " Motions
 NeoBundle 'easymotion/vim-easymotion'
 NeoBundle 'bkad/CamelCaseMotion'
 NeoBundle 'adelarsq/vim-matchit'
 NeoBundle 'tmhedberg/indent-motion' " maps <Leader>[ and <Leader>] to jump to beg/end of a block
-NeoBundle 'mg979/vim-visual-multi'
+" NeoBundle 'mg979/vim-visual-multi' " Some mappings collide, need to remap
 
 " Transformations/Objects/Targets
 NeoBundle 'AndrewRadev/splitjoin.vim'
@@ -101,8 +102,9 @@ NeoBundle 'tpope/vim-vinegar'
 NeoBundle 'sheerun/vim-polyglot' " Start with a great baseline
                                  " working SHA: 4f3df59be709bf0d5c5c67dc804fde49abdc2700
 
+NeoBundle 'hail2u/vim-css3-syntax' " Suggested by `cakebaker/scss-syntax.vim` from Polyglot
 " JavaScript/Node/TypeScript
-NeoBundle 'Quramy/tsuquyomi'
+NeoBundle 'Quramy/tsuquyomi'     " working SHA: 144526df5340d3bd0b413e6127c0393de171889a
 NeoBundle 'okcompute/vim-javascript-motions'
 NeoBundle 'moll/vim-node'
 " NeoBundle 'jason0x43/vim-js-indent' " Possibly improved indenting?

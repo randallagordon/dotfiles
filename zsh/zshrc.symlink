@@ -8,6 +8,7 @@ export DOCUMENTS=~/Documents
 
 # all of our zsh files
 typeset -U config_files
+# TODO: Ignore $ZSH/vim/*
 config_files=($ZSH/**/*.zsh)
 
 # load the path files
