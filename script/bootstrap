@@ -130,6 +130,14 @@ then
 
   # Reclaim the Ctrl+Cmd+D hotkey from macOS's "define" feature
   defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 70 '<dict><key>enabled</key><false/></dict>'
+  # Fix key repeat
+  defaults write -g ApplePressAndHoldEnabled -bool false
+  defaults write -g InitialKeyRepeat -int 10
+  defaults write -g KeyRepeat -int 1
+  # Fix dialog sizes
+  defaults write com.google.Chrome NSNavPanelExpandedSizeForSaveMode -string "{900, 900}"
+  # Karabiner
+  ln -s ~/.dotfiles/settings/karabiner ~/.config/karabiner
 fi
 
 # Powerline Stuff
@@ -138,7 +146,11 @@ ln -s ~/.dotfiles/powerline-config ~/.config/powerline
 ln -s ~/.dotfiles/byobu ~/.byobu
 
 # Vim
-ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
+# ln -s ~/.dotfiles/vim/vimrc ~/.vimrc # Link `vimrc` directly if not using `swim`
+curl -s https://raw.githubusercontent.com/dawsonbotsford/swim/master/install | bash
+swim add ~/.dotfiles/vim/vimrc dotfiles
+ln -s ~/.dotfiles/vim/vimrc ~/.swim/dotfiles.vim
+# `swim` does not manage `~/.vim` itself
 ln -s ~/.dotfiles/vim/ ~/.vim
 cd ~/.vim && git submodule init && git submodule update
 
@@ -160,7 +172,7 @@ mkdir ~/Projects
 mkdir ~/Sandbox
 mkdir ~/src
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 
 echo ''
 echo '  All installed!'
