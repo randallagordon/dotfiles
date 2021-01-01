@@ -6,4 +6,4 @@ alias nnm="find . -name "node_modules" -type d -prune -exec rm -rf '{}' +"
 alias nnmi="nnm && npm i"
 alias npv="node -p \"require('./package.json').version\""
 alias babel-nodemon="nodemon --exec babel-node -- "
-alias npmiglobals='npm i -g nodemon bunyan jira-cl git-branch-select git-commits-since'
+alias npmiglobals='npm i -g yarn nodemon bunyan jira-cl git-branch-select git-commits-since'
