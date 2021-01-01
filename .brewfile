@@ -1,59 +1,63 @@
 brew tap homebrew/services
 
+brew install iterm2
 brew install zsh tmux
 brew install git hub diff-so-fancy git-recent
 brew install gh
-brew install --cask  github
+brew install github
 brew install node python ruby
-brew install java
-# brew install jabba
+brew install java jabba
 brew install vim ctags cmake
 # brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 # ruby required for command-t
 # cmake required for YouCompleteMe
-brew install the_silver_searcher exa fd bat wget jq tree
+brew install the_silver_searcher exa fd bat wget httpie jq tree
 brew install awscli
 brew install tfenv
 
-# brew install weechat --with-perl --with-python
+brew install docker 
+brew install virtualbox 
+brew install virtualbox-extension-pack 
 # brew install elasticsearch
 # brew install postgres
-# brew install httpie
 # brew install ios-webkit-debug-proxy
 
-brew install --cask  iterm2
+brew install google-chrome 
+brew install homebrew/cask-versions/google-chrome-canary 
+brew install dropbox 
+brew install istat-menus 
+brew install the-unarchiver
+brew install slack
+# brew install weechat --with-perl --with-python
+brew install signal
+brew install tuple
+brew install zoom
 
-brew install --cask  google-chrome 
-brew install --cask  homebrew/cask-versions/google-chrome-canary 
-brew install --cask  dropbox 
-brew install --cask  istat-menus 
-brew install --cask  the-unarchiver
-brew install --cask  signal
+brew install figma 
+# brew install sketch
+brew install hex-fiend
+brew install visual-studio-code 
+brew install keycastr 
+brew install ngrok 
+brew install postico 
+brew install postman
+brew install db-browser-for-sqlite
 
-brew install --cask  figma 
-brew install --cask  hex-fiend
-brew install --cask  visual-studio-code 
-brew install --cask  docker 
-brew install --cask  virtualbox 
-brew install --cask  virtualbox-extension-pack 
-brew install --cask  keycastr 
-brew install --cask  ngrok 
-brew install --cask  postico 
-brew install --cask  postman
-brew install --cask  db-browser-for-sqlite
+brew install 1password
+brew install bartender
+brew install spectacle
+brew install notion
+brew install numi
+brew install rocket
+brew install pastebot
+brew install karabiner-elements
 
-brew install --cask  bartender
-brew install --cask  spectacle
-brew install --cask  notion
-brew install --cask  numi
-brew install --cask  rocket
-brew install --cask  karabiner-elements
+brew install soundsource
+brew install spotify  
+brew install soundcleod 
+brew install cumulus
+brew install homebrew/cask-drivers/sonos
 
-brew install --cask  soundsource
-brew install --cask  spotify  
-brew install --cask  soundcleod 
-brew install --cask  cumulus
-brew install --cask  homebrew/cask-drivers/sonos
+brew install nightowl
+# brew install flux
 
-# brew install --cask  flux
-# brew install --cask  sketch
