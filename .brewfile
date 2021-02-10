@@ -24,6 +24,7 @@ brew install virtualbox-extension-pack
 
 brew install google-chrome 
 brew install homebrew/cask-versions/google-chrome-canary 
+brew install firefox
 brew install dropbox 
 brew install istat-menus 
 brew install the-unarchiver
@@ -61,3 +62,5 @@ brew install homebrew/cask-drivers/sonos
 brew install nightowl
 # brew install flux
 
+# brew install uberlayer
+# https://github.com/jankeesvw/uberlayer/releases/
