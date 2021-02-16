@@ -7,3 +7,6 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 " 2019-05-23: YCM now has `g:ycm_use_ultisnips_completer`, is this necessary?
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+
+" Toggle for hiding the docs shown on hover
+nmap <leader>d <plug>(YCMHover)

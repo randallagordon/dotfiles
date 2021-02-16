@@ -8,7 +8,7 @@ endif
 if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
     \ | wincmd p | diffthis
-  nmap <leader>d :DiffOrig<CR>
+  nmap <leader>ds :DiffOrig<CR>
 endif
 
 nmap <leader>dt :windo diffthis<CR>          " Diff open buffers
